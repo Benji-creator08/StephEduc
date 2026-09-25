@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=contact-spacing-4">
+<link rel="stylesheet" href="css/style.css?v=footer-left-7">
 <style>
   .legal-content { max-width: 760px; }
   .legal-content h2 { margin-top: 40px; font-size: 1.3rem; }
@@ -39,11 +39,20 @@
         </span>
       </span>
     </a>
-    <nav class="main-nav legal-nav">
-      <a href="index.html#apropos">À propos</a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="index.html#besoin">Votre besoin</a>
+      <a href="index.html#methode">Méthode</a>
+      <a href="index.html#apropos">Qui suis-je</a>
+      <a href="index.html#avis">Avis</a>
       <a href="index.html#services">Prestations</a>
+      <a href="index.html#localisation">Localisation</a>
+      <a href="index.html#faq">FAQ</a>
       <a href="index.html#contact">Contact</a>
     </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -99,7 +108,6 @@
     <p>Les informations présentes sur ce site sont fournies à titre informatif. STEPH'EDUC s'efforce de maintenir des informations exactes et à jour, sans toutefois pouvoir garantir l'absence d'erreurs, d'omissions ou d'indisponibilité temporaire du site.</p>
 
     <h2>Crédits</h2>
-    <p>Site conçu et développé avec Claude Code.</p>
     <p>Dernière mise à jour : septembre 2026.</p>
   </div>
 </main>

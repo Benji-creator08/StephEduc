@@ -758,12 +758,16 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--color-dark); color: rgba(255,255,255,0.82); padding: 52px 0 24px; }
-.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 28px; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+.footer-inner {
+  display: grid; grid-template-columns: max-content minmax(0, 1fr);
+  align-items: end; gap: 24px 40px; padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
 .footer-brand strong { font-family: var(--font-display); font-size: 1.2rem; color: #fff; }
 .footer-brand p { font-size: 0.85rem; margin-top: 6px; color: rgba(255,255,255,0.6); }
-.footer-nav { display: flex; gap: 8px 20px; flex-wrap: wrap; font-size: 0.9rem; }
+.footer-nav { display: flex; justify-content: flex-end; align-items: center; gap: 8px 20px; flex-wrap: wrap; font-size: 0.9rem; }
 .footer-nav a:hover, .footer-social a:hover { color: var(--color-accent-soft); }
-.footer-social { display: flex; gap: 18px; font-size: 0.9rem; }
+.footer-social { grid-column: 1 / -1; display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 8px 22px; font-size: 0.9rem; }
 .footer-bottom { padding-top: 20px; font-size: 0.8rem; color: rgba(255,255,255,0.5); }
 
 /* ---------- Boutons flottants : WhatsApp + retour en haut ---------- */
@@ -897,6 +901,9 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
   .contact-list { height: auto; grid-template-rows: none; gap: 10px; }
   .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .field-name { grid-column: 1 / -1; }
+  .footer-inner { grid-template-columns: 1fr; align-items: start; gap: 20px; }
+  .footer-nav { justify-content: flex-start; }
+  .footer-social { grid-column: 1; justify-content: flex-start; }
   .adopt-cta { flex-direction: column; align-items: flex-start; padding: 24px; }
 }
 
