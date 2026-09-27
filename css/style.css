@@ -1072,6 +1072,15 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
   }
   .hero-content { padding-top: 32vh; padding-bottom: 44px; }
 }
+/* Téléphone uniquement : le point focal remonte vers la partie haute droite
+   de la photo, sans modifier le cadrage tablette ou ordinateur. */
+@media (orientation: portrait) and (max-width: 620px) {
+  .hero .hero-media img {
+    height: calc(100% + 56px);
+    object-position: 72% top;
+    transform: translateY(-56px);
+  }
+}
 /* Téléphones peu hauts (ex. iPhone SE) : on resserre pour garder les visages visibles */
 @media (orientation: portrait) and (max-height: 720px) and (max-width: 620px) {
   .hero-lead { display: none; }
