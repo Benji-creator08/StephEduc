@@ -210,9 +210,11 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 2px); }
 .hero .eyebrow { color: var(--color-accent-soft); }
 .hero h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); color: #fff; max-width: 780px; margin-bottom: 14px; }
 .hero-role {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
   font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.1em;
   font-size: 0.95rem; font-weight: 600; color: rgba(255,255,255,0.95); margin-bottom: 22px;
 }
+.hero-role-profession { white-space: nowrap; }
 .hero-slogan {
   font-family: var(--font-display); font-style: italic; font-size: 1.35rem; line-height: 1.35;
   color: #fff; margin-bottom: 20px; position: relative; padding-left: 18px;
@@ -824,6 +826,7 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
   .logo-image { height: 76px; }
   .problem-grid { grid-template-columns: repeat(4, 1fr); }
   .problem-card { min-height: 96px; }
+  .hero-media img { object-position: 78% 42%; }
 }
 
 /* ---- Contact sur tablette et petit ordinateur : coordonnées à gauche,
@@ -1061,7 +1064,7 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
    ============================================================ */
 @media (orientation: portrait) {
   .hero { align-items: flex-end; min-height: 88vh; min-height: calc(100svh - var(--header-h)); }
-  .hero-media img { object-position: 57% top; }
+  .hero-media img { object-position: 78% top; }
   .hero-overlay {
     background: linear-gradient(180deg,
       rgba(16,38,39,0.05) 0%, rgba(16,38,39,0.08) 24%,
