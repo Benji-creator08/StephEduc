@@ -1076,9 +1076,9 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
    de la photo, sans modifier le cadrage tablette ou ordinateur. */
 @media (orientation: portrait) and (max-width: 620px) {
   .hero .hero-media img {
-    height: calc(100% + 56px);
+    height: calc(100% + 136px);
     object-position: 72% top;
-    transform: translateY(-56px);
+    transform: translateY(-136px);
   }
 }
 /* Téléphones peu hauts (ex. iPhone SE) : on resserre pour garder les visages visibles */
