@@ -208,13 +208,18 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 2px); }
 }
 .hero-content { position: relative; z-index: 2; padding: 140px var(--gutter) 100px; }
 .hero .eyebrow { color: var(--color-accent-soft); }
-.hero h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); color: #fff; max-width: 780px; margin-bottom: 14px; }
+.hero h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); color: #fff; max-width: 780px; margin-bottom: 4px; }
+.hero-brand { display: block; }
+.hero-heading-profession {
+  display: block; margin-top: 14px;
+  font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.1em;
+  font-size: 0.95rem; line-height: 1.5; font-weight: 600; color: rgba(255,255,255,0.95);
+}
 .hero-role {
-  display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
+  display: flex; flex-direction: column; align-items: flex-start;
   font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.1em;
   font-size: 0.95rem; font-weight: 600; color: rgba(255,255,255,0.95); margin-bottom: 22px;
 }
-.hero-role-profession { white-space: nowrap; }
 .hero-slogan {
   font-family: var(--font-display); font-style: italic; font-size: 1.35rem; line-height: 1.35;
   color: #fff; margin-bottom: 20px; position: relative; padding-left: 18px;
@@ -773,12 +778,12 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
 .site-footer { background: var(--color-dark); color: rgba(255,255,255,0.82); padding: 52px 0 24px; }
 .footer-inner {
   display: grid; grid-template-columns: max-content minmax(0, 1fr);
-  align-items: end; gap: 24px 40px; padding-bottom: 30px;
+  align-items: end; gap: 24px; padding-bottom: 30px;
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 .footer-brand strong { font-family: var(--font-display); font-size: 1.2rem; color: #fff; }
-.footer-brand p { font-size: 0.85rem; margin-top: 6px; color: rgba(255,255,255,0.6); }
-.footer-nav { display: flex; justify-content: flex-end; align-items: center; gap: 8px 20px; flex-wrap: wrap; font-size: 0.9rem; }
+.footer-brand p { font-size: 0.78rem; margin-top: 6px; color: rgba(255,255,255,0.6); white-space: nowrap; }
+.footer-nav { display: flex; justify-content: flex-end; align-items: center; gap: 14px; flex-wrap: nowrap; white-space: nowrap; font-size: 0.78rem; }
 .footer-nav a:hover, .footer-social a:hover { color: var(--color-accent-soft); }
 .footer-social { grid-column: 1 / -1; display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 8px 22px; font-size: 0.9rem; }
 .footer-bottom { padding-top: 20px; font-size: 0.8rem; color: rgba(255,255,255,0.5); }
@@ -838,6 +843,10 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
   .problem-grid { grid-template-columns: repeat(4, 1fr); }
   .problem-card { min-height: 96px; }
   .hero-media img { object-position: 78% 42%; }
+  .footer-inner { grid-template-columns: 1fr; align-items: start; gap: 18px; }
+  .footer-brand p { white-space: normal; }
+  .footer-nav { justify-content: flex-start; flex-wrap: wrap; white-space: normal; }
+  .footer-social { grid-column: 1; }
 }
 
 /* ---- Contact sur tablette et petit ordinateur : coordonnées à gauche,
@@ -926,7 +935,8 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
   :root { --section-y: 56px; }
   .hero-content { padding: 96px var(--gutter) 52px; }
   .hero h1 { font-size: clamp(2.2rem, 11vw, 3rem); }
-  .hero-role { font-size: 0.78rem; letter-spacing: 0.06em; margin-bottom: 16px; }
+  .hero-heading-profession, .hero-role { font-size: 0.78rem; letter-spacing: 0.06em; }
+  .hero-role { margin-bottom: 16px; }
   .hero-slogan { font-size: 1.15rem; margin-bottom: 14px; }
   .hero-lead { font-size: 1rem; margin-bottom: 24px; }
   .hero-actions { gap: 10px; }

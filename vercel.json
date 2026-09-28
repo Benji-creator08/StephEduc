@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.stepheduc.fr"
+        }
+      ],
+      "destination": "https://stepheduc.fr/:path*",
+      "permanent": true
+    }
+  ]
+}
