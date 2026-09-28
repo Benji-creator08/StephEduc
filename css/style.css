@@ -237,7 +237,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 2px); }
   color: #fff; padding: 46px 0;
   border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: center; }
 .stat { padding: 0 12px; border-left: 1px solid rgba(255,255,255,0.12); }
 .stat:first-child { border-left: none; }
 .stat-number {
@@ -667,7 +667,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 2px); }
 .contact-text { min-width: 0; }
 .contact-list {
   margin-top: 0; height: 100%; display: grid; grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, minmax(68px, 1fr)); gap: 14px;
+  grid-template-rows: repeat(6, minmax(68px, 1fr)); gap: 14px;
 }
 .contact-item {
   display: flex; align-items: center; gap: 14px; height: 100%;
@@ -681,10 +681,21 @@ a.contact-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-sof
   display: flex; align-items: center; justify-content: center;
   background: var(--color-primary-soft); color: var(--color-primary-dark);
 }
-.contact-item-whatsapp .contact-icon { background: #DCF3E4; color: #1F7A46; }
-.contact-item-mail .contact-icon { background: var(--color-accent-soft); color: var(--color-accent-dark); }
-.contact-item-insta .contact-icon { background: #F6E2EC; color: #A8376B; }
-.contact-item-fb .contact-icon { background: #DDE7F6; color: #2B4E86; }
+.contact-item-phone .contact-icon,
+.contact-item-whatsapp .contact-icon { background: #fff; border: 1px solid #E2E8F0; overflow: hidden; }
+.contact-item-whatsapp .contact-icon img { display: block; width: 28px; height: 28px; max-width: none; flex: none; object-fit: contain; }
+.contact-item-mail .contact-icon,
+.contact-item-insta .contact-icon,
+.contact-item-fb .contact-icon,
+.contact-item-google .contact-icon { background: #fff; border: 1px solid #E2E8F0; overflow: hidden; }
+.contact-item-mail .contact-icon img,
+.contact-item-insta .contact-icon img,
+.contact-item-fb .contact-icon img,
+.contact-item-google .contact-icon img { max-width: none; flex: none; }
+.contact-item-mail .contact-icon img { display: block; width: 52px; height: 52px; object-fit: contain; }
+.contact-item-insta .contact-icon img { display: block; width: 38px; height: 38px; object-fit: contain; }
+.contact-item-fb .contact-icon img { display: block; width: 28px; height: 28px; object-fit: contain; }
+.contact-item-google .contact-icon img { display: block; width: 28px; height: 28px; object-fit: contain; }
 .contact-item-static { background: transparent; border-style: dashed; }
 .contact-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .contact-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-soft); }
@@ -922,9 +933,9 @@ a.contact-item:hover .contact-body strong { color: var(--color-accent-dark); }
   .hero-actions .btn { flex: 1 1 100%; }
 
   .stats-bar { padding: 30px 0; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 12px; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 22px 12px; }
   .stat, .stat:first-child { border-left: none; padding: 0; }
-  .stat:nth-child(even) { border-left: 1px solid rgba(255,255,255,0.12); }
+  .stat + .stat { border-left: 1px solid rgba(255,255,255,0.12); }
 
   /* Situation : cartes compactes sur deux colonnes */
   .problem-grid { grid-template-columns: 1fr 1fr; gap: 10px; }

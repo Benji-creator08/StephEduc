@@ -623,20 +623,20 @@
     {
       id: 2,
       name: "Un accompagnement éducatif",
-      text: "Ce que vous décrivez se travaille très bien en séances individuelles régulières (60 € de l'heure), avec des exercices à poursuivre entre deux rendez-vous. On avance par étapes, en commençant par ce qui vous gêne le plus au quotidien.",
+      text: "Ce que vous décrivez se travaille très bien en séances individuelles régulières, avec des exercices à poursuivre entre deux rendez-vous. On avance par étapes, en commençant par ce qui vous gêne le plus au quotidien.",
       suite: "Le bilan permet d'abord de définir ensemble le point de départ et le rythme."
     },
     {
       id: 3,
       name: "Un accompagnement personnalisé",
-      text: "Les éléments que vous décrivez se répondent entre eux : travailler un point sans tenir compte des autres donne rarement un résultat durable. Un accompagnement individuel construit sur mesure (60 € de l'heure, à votre domicile ou sur le terrain de Mareil-Marly) permet d'avancer dans le bon ordre, au rythme de votre chien.",
+      text: "Les éléments que vous décrivez se répondent entre eux : travailler un point sans tenir compte des autres donne rarement un résultat durable. Un accompagnement individuel construit sur mesure, à votre domicile ou sur le terrain de Mareil-Marly, permet d'avancer dans le bon ordre, au rythme de votre chien.",
       suite: "Tout commence par le bilan, qui sert à poser le plan de travail."
     },
     {
       id: 4,
       name: "Un bilan approfondi, en priorité",
       text: "Avant tout exercice technique, la priorité est de comprendre ce qui se joue vraiment pour votre chien et de sécuriser le quotidien. Le bilan est justement fait pour cela : prendre le temps d'observer, d'écouter, puis de construire un plan progressif.",
-      suite: "Les séances individuelles (60 € de l'heure, à domicile ou sur le terrain de Mareil-Marly) prennent ensuite le relais, à un rythme adapté à ce qui aura été observé."
+      suite: "Les séances individuelles, à domicile ou sur le terrain de Mareil-Marly, prennent ensuite le relais, à un rythme adapté à ce qui aura été observé."
     }
   ];
 
